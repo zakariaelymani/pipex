@@ -26,6 +26,19 @@ char *findPATH(char **env)
     }
     return (env[i - 1]);
 }
+int check_spialcharac(char *s)
+{
+    int i;
+    
+    i = 0;
+    while(s[i])
+    {
+        if (ft_isalpha(s[i]) == 0)
+            return(0);
+        i++;
+    }
+    return (1);
+}
 char *findcmdpath(char **env,char *cmd)
 {
     char *path;
@@ -38,6 +51,8 @@ char *findcmdpath(char **env,char *cmd)
     i = 0;
     cmds = ft_split(cmd, ' ');
     cmd  = cmds[0];
+    if(check_spialcharac(cmd) == 0)
+        return(NULL);
     path = findPATH(env);
     path = ft_strchr(path,'/');
     splited = ft_split(path,':');

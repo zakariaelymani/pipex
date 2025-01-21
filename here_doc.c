@@ -21,6 +21,7 @@ char	*free_and_join(char *store, char *s)
 
 	str = ft_strjoin(store, s);
 	free(store);
+	store = NULL;
 	return (str);
 }
 void here_doc(char *limitter)
@@ -31,7 +32,7 @@ void here_doc(char *limitter)
 	ssize_t readbitys;
 
 	limitter = ft_strjoin(limitter, "\n");
-	fd = open("here_doc.txt", O_WRONLY | O_CREAT | O_TRUNC , 0644);
+	fd = open("/tmp/here_doc.txt", O_WRONLY | O_CREAT | O_TRUNC , 0644);
 	while (1)
 	{
 		ft_putstr_fd("pipe pipe heredoc>",1);
@@ -40,6 +41,8 @@ void here_doc(char *limitter)
 		{
 			readbitys = read(1,buffer,1);
 			buffer[readbitys] = '\0';
+			if(readbitys == -1)
+				exit(7);
 			tmp = free_and_join(tmp,buffer);
 		}
 		if (ft_strncmp(tmp,limitter, ft_strlen(limitter)) == 0)
@@ -73,6 +76,7 @@ void main_here_doc(int agc, char *agv[], char *env[])
 	else
 	{
 		wait(NULL);
+		unlink("/tmp/here_doc");
 		close(pid[1]);
 		fd2 = open(agv[5],O_WRONLY | O_CREAT | O_APPEND, 0644);
 		executcommand(findcmdpath(env,agv[4]), agv[4], pid[0],fd2);

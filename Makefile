@@ -2,13 +2,13 @@ FILE =  pipex.c utils.c
 NAME = pipex
 CC = cc 
 bonfile = utils_bonus.c pipex_bonus.c here_doc.c
-FLAGS = -Wall -Werror -Wextra 
+FLAGS = -Wall -Werror -Wextra -g -fsanitize=address
 FILES=$(FILE:.c=.o)
 OBJbo = $(bonfile:.c=.o)
 lib=libft/libft.a
  %.o: %.c pipex.h
 	@$(CC) $(FLAGS)  -c $< -o $@
-%.o: %.c pipex_bonus.h
+%.o: %.c pipex_bonus.h 
 	@$(CC) $(FLAGS)  -c $< -o $@
 all: $(NAME)
 

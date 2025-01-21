@@ -6,11 +6,7 @@
 /*   By: zel-yama <zel-yama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:42:08 by zel-yama          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2025/01/17 15:24:52 by zel-yama         ###   ########.fr       */
-=======
-/*   Updated: 2025/01/15 12:44:08 by zel-yama         ###   ########.fr       */
->>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
+/*   Updated: 2025/01/21 14:25:43 by zel-yama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +38,20 @@ char *findPATH(char **env)
     }
     return (env[i - 1]);
 }
-<<<<<<< HEAD
+int check_spialcharac(char *s)
+{
+    int i;
+    
+    i = 0;
+    while(s[i])
+    {
+        if (ft_isalpha(s[i]) == 0)
+            return(0);
+        i++;
+    }
+    return (1);
+}
 char *find_cmdpath(char **env,char *cmd)
-=======
-char *findcmdpath(char **env,char *cmd)
->>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
 {
     char *path;
     char *cmdjoined;
@@ -58,6 +63,8 @@ char *findcmdpath(char **env,char *cmd)
     i = 0;
     cmds = ft_split(cmd, ' ');
     cmd  = cmds[0];
+    if(check_spialcharac(cmds[0]) == 0) 
+        return (NULL);
     path = findPATH(env);
     path = ft_strchr(path,'/');
     splited = ft_split(path,':');

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include "pipex_bonus.h"
 
 void executcommand(char *path, char *cmd,int input, int output)
@@ -33,35 +32,11 @@ void executcommand(char *path, char *cmd,int input, int output)
 		close(input);
 		close(output);
 	}	
-=======
-#include "pipex.h"
-
-void executcommand(char *path, char *cmd)
-{
-	char **agrs;
-	int	proc;
-
-    proc = fork();
-	if(proc == 0)
-	{
-		if (!path)
-		{
-			perror("command not found");
-			exit(1);
-		}
-		agrs = ft_split(cmd,' ');
-		execve(path ,agrs,NULL);
-		perror("error in execve function");
-		exit(1);
-	}
-	wait(NULL);
->>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
 }
 
 int main(int argc, char *argv[], char *env[])
 {	
 	int pid[argc - 3][2];
-<<<<<<< HEAD
 	int i;
 	int j;
 	int fd;
@@ -112,11 +87,3 @@ int main(int argc, char *argv[], char *env[])
 	}
     return (0);
 }
-=======
-	if (argc >= 5)
-	{
-		
-	}
-    return (0);
-}
->>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
