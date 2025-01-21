@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 airakaz
 inamay le
 efil ruoy  ni ereh
@@ -16,3 +17,10 @@ efil ruoy  ni ereh
 4321
 654321
 654321
+=======
+what 1 happen to the file 
+i 2 i don't care cuz
+i 1 should not care of it 
+so 1 to grasp that consepts 
+ 
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe

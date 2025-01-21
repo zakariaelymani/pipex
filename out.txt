@@ -1,1 +1,35 @@
+<<<<<<< HEAD
       5      25     106
+=======
+441 latot
+elifekaM 83:01 31 naJ 892   agbiruohk_4202 amay-lez 1 --r-wr-wr-
+tuo.a 42:21 11 naJ 02991 agbiruohk_4202 amay-lez 1 x-rx-rxwr-
+c.cexe 33:71 01 naJ 728   agbiruohk_4202 amay-lez 1 --r-wr-wr-
+txt.elif 65:81 41 naJ 601   agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.htapdnif 52:91 01 naJ 8461  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.htaplaerdnif 33:01 31 naJ 169   agbiruohk_4202 amay-lez 1 --r--r-wr-
+o.htaplaerdnif 03:21 31 naJ 8822  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.tilps_tf 13:21 8  naJ 1032  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.tilps_tf 03:21 31 naJ 8652  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.pudrts_tf 72:21 8  naJ 4811  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.pudrts_tf 03:21 31 naJ 6941  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.niojrts_tf 43:01 31 naJ 3251  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.niojrts_tf 03:21 31 naJ 6391  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.nelrts_tf 62:21 8  naJ 6101  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.nelrts_tf 03:21 31 naJ 6521  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.rhcnrts_tf 54:31 8  naJ 8301  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.rhcnrts_tf 03:21 31 naJ 2721  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.rtsnrts_tf 13:21 8  naJ 9941  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+c.rhcrrts_tf 65:21 8  naJ 7801  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+c.enil_txen_teg 60:31 8  naJ 7362  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.slitu_enil_txen_teg 94:81 01 naJ 7602  agbiruohk_4202 amay-lez 1 --r--r-wr-
+lng 50:31 8  naJ 151   agbiruohk_4202 amay-lez 3 x-rx-rxwrd
+tfbil 52:91 01 naJ 6904  agbiruohk_4202 amay-lez 3 x-rx-rxwrd
+.tuptuo 81:61 41 naJ 52    agbiruohk_4202 amay-lez 1 --r--r-wr-
+txt.tuptuo 50:91 41 naJ 0     agbiruohk_4202 amay-lez 1 --r--r-wr-
+xepip 50:91 41 naJ 00402 agbiruohk_4202 amay-lez 1 x-rx-rxwr-
+c.xepip 50:91 41 naJ 9191  agbiruohk_4202 amay-lez 1 --r-wr-wr-
+h.xepip 01:51 11 naJ 324   agbiruohk_4202 amay-lez 1 --r-wr-wr-
+o.xepip 50:91 41 naJ 4223  agbiruohk_4202 amay-lez 1 --r--r-wr-
+c.tset 13:21 8  naJ 622   agbiruohk_4202 amay-lez 1 --r-wr-wr-
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe

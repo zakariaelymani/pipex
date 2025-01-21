@@ -6,7 +6,11 @@
 /*   By: zel-yama <zel-yama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 14:53:55 by zel-yama          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2025/01/20 12:41:54 by zel-yama         ###   ########.fr       */
+=======
+/*   Updated: 2025/01/16 15:33:32 by zel-yama         ###   ########.fr       */
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +54,7 @@ int main(int argc, char *argv[], char *env[])
     {
         close(pid[0]);
 		fd = open(argv[1],O_RDONLY);
+<<<<<<< HEAD
         executcommand(find_cmdpath(env,argv[2]),argv[2],fd,pid[1]);
     }
   	else
@@ -57,9 +62,22 @@ int main(int argc, char *argv[], char *env[])
         close(pid[1]);
         fd = open(argv[4],O_WRONLY | O_CREAT | O_TRUNC,0644);
         executcommand(find_cmdpath(env,argv[3]),argv[3],pid[0],fd);  
+=======
+        executcommand(findcmdpath(env,argv[2]),argv[2],fd,pid[1]);
+    }
+    else
+    {
+        close(pid[1]);
+        fd = open(argv[4],O_WRONLY | O_CREAT | O_TRUNC,0644);
+        executcommand(findcmdpath(env,argv[3]),argv[3],pid[0],fd);  
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
     }
     close(pid[0]);
     close(pid[1]);
     wait(NULL);
+<<<<<<< HEAD
+=======
+    wait(NULL);
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
     return (0);
 }
