@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+      5      25     106
+=======
 441 latot
 elifekaM 83:01 31 naJ 892   agbiruohk_4202 amay-lez 1 --r-wr-wr-
 tuo.a 42:21 11 naJ 02991 agbiruohk_4202 amay-lez 1 x-rx-rxwr-
@@ -29,3 +32,4 @@ c.xepip 50:91 41 naJ 9191  agbiruohk_4202 amay-lez 1 --r-wr-wr-
 h.xepip 01:51 11 naJ 324   agbiruohk_4202 amay-lez 1 --r-wr-wr-
 o.xepip 50:91 41 naJ 4223  agbiruohk_4202 amay-lez 1 --r--r-wr-
 c.tset 13:21 8  naJ 622   agbiruohk_4202 amay-lez 1 --r-wr-wr-
+>>>>>>> 3d8b75dcfcae9d858d4d982d2152eace5308e3fe
