@@ -6,12 +6,22 @@
 /*   By: zel-yama <zel-yama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:42:08 by zel-yama          #+#    #+#             */
-/*   Updated: 2025/01/21 14:25:43 by zel-yama         ###   ########.fr       */
+/*   Updated: 2025/01/22 10:42:33 by zel-yama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
+
+char	*free_and_join(char *store, char *s)
+{
+	char	*str;
+
+	str = ft_strjoin(store, s);
+	free(store);
+	store = NULL;
+	return (str);
+}
 char *findPATH(char **env)
 {
     char *path;

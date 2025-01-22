@@ -6,7 +6,7 @@
 /*   By: zel-yama <zel-yama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 14:53:55 by zel-yama          #+#    #+#             */
-/*   Updated: 2025/01/21 13:27:42 by zel-yama         ###   ########.fr       */
+/*   Updated: 2025/01/22 10:56:43 by zel-yama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@ void executcommand(char *path, char *cmd,int input, int output)
         exit(2);
     }
     if(!path)
-        exit(3);
+	{
+		exit(3);
+	}  
 	dup2(input,0);
 	close(input);
 	dup2(output,1);
@@ -39,8 +41,10 @@ int main(int argc, char *argv[], char *env[])
 	int n;
 
 	pipe(pid);
-	if(argc != 5)  
-        exit(1);
+	if(argc != 5)
+	{
+		exit(1);
+	}
     n = fork(); 
     if (n == 0)
     {
@@ -50,10 +54,14 @@ int main(int argc, char *argv[], char *env[])
     }
   	else
     {
-        close(pid[1]);
-        wait(NULL);
-        fd = open(argv[4],O_WRONLY | O_CREAT | O_TRUNC,0644);
-        executcommand(find_cmdpath(env,argv[3]),argv[3],pid[0],fd);  
+		wait(NULL);
+		n = fork(); 
+    	if (n == 0)
+    	{
+			close(pid[1]);
+			fd = open(argv[4],O_WRONLY | O_CREAT | O_TRUNC,0644);
+			executcommand(find_cmdpath(env,argv[3]),argv[3],pid[0],fd); 
+		} 
     }
     return (0);
 }

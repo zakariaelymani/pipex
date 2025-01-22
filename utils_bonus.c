@@ -62,7 +62,9 @@ char *findcmdpath(char **env,char *cmd)
         cmdjoined = ft_strjoin(splited[i], cmd);
         check = access(cmdjoined, F_OK | X_OK);
         if (check == 0)
+        {
             return (cmdjoined);
+        }   
        i++;
     }
     return (NULL);

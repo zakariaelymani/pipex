@@ -2,7 +2,7 @@ FILE =  pipex.c utils.c
 NAME = pipex
 CC = cc 
 bonfile = utils_bonus.c pipex_bonus.c here_doc.c
-FLAGS = -Wall -Werror -Wextra -g -fsanitize=address
+FLAGS = -Wall -Werror -Wextra 
 FILES=$(FILE:.c=.o)
 OBJbo = $(bonfile:.c=.o)
 lib=libft/libft.a
